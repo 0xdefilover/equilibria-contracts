@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.17;
 
-import "@shared/lib-contracts-v0.8/contracts/Dependencies/AddressLib.sol";
 import "./Interfaces/IRewards.sol";
 import "./Interfaces/IPendleProxyMainchain.sol";
 import "./Interfaces/Pendle/IPFeeDistributorV2.sol";
 import "./Interfaces/Pendle/IPVotingController.sol";
 import "./Interfaces/Pendle/IPVotingEscrowMainchain.sol";
 import "./PendleProxyBaseUpg.sol";
+import "./Dependencies/AddressLib.sol";
 
 contract PendleProxyMainchain is PendleProxyBaseUpg, IPendleProxyMainchain {
     using SafeERC20 for IERC20;

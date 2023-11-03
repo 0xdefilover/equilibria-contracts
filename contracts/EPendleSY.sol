@@ -2,8 +2,7 @@
 pragma solidity 0.8.17;
 
 import "@pendle/core-v2/contracts/core/StandardizedYield/SYBaseWithRewards.sol";
-import "@shared/lib-contracts-v0.8/contracts/Interfaces/IWNative.sol";
-
+import "./Interfaces/IWNative.sol";
 import "./Interfaces/ISmartConvertor.sol";
 import "./Interfaces/IBaseRewardPool.sol";
 import "./Interfaces/Balancer/IBalancerVault.sol";

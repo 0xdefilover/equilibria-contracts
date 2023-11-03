@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 import "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol";
-import "@shared/lib-contracts-v0.8/contracts/Dependencies/TransferHelper.sol";
+import "../Dependencies/TransferHelper.sol";
 import "../Interfaces/IBaseRewardPool.sol";
 import "../Interfaces/ISmartConvertor.sol";
 import "../Interfaces/Balancer/IBalancerVault.sol";

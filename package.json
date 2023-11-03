@@ -1,0 +1,35 @@
+{
+  "name": "@0xdefilover/equilibria-contracts",
+  "description": "Core smart contracts for Equilibria Finance",
+  "version": "1.0.0",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.3",
+    "@openzeppelin/contracts-upgradeable": "^4.9.3",
+    "@pendle/core-v2": "^5.0.4"
+  },
+  "devDependencies": {
+    "forge-std": "github:foundry-rs/forge-std#v1.8.1",
+    "prettier": "^3.0.0",
+    "solhint": "^3.6.2"
+  },
+  "keywords": [
+    "defi",
+    "ethereum",
+    "solidity",
+    "foundry",
+    "forge",
+    "smart-contracts"
+  ],
+  "scripts": {
+    "clean": "rm -rf cache out",
+    "build": "forge build",
+    "lint": "yarn run lint:sol && yarn run prettier:check",
+    "lint:sol": "forge fmt --check && yarn solhint {script,src,test}/**/*.sol",
+    "prettier:check": "prettier --check \"**/*.{json,md,yml}\" --ignore-path \".prettierignore\"",
+    "prettier:write": "prettier --write \"**/*.{json,md,yml}\" --ignore-path \".prettierignore\"",
+    "test": "forge test",
+    "test:coverage": "forge coverage"
+  }
+}

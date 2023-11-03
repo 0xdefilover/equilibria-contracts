@@ -5,7 +5,7 @@ import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 import "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol";
 import "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol";
 
-import "@shared/lib-contracts-v0.8/contracts/Dependencies/TransferHelper.sol";
+import "./Dependencies/TransferHelper.sol";
 import "./Dependencies/Errors.sol";
 
 contract BribeManager is AccessControlUpgradeable {

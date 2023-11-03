@@ -5,13 +5,13 @@ import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
 
 import "./Interfaces/IXEqbToken.sol";
-import "@shared/lib-contracts-v0.8/contracts/Dependencies/TransferHelper.sol";
 import "./Interfaces/IPendleBooster.sol";
 import "./Interfaces/IPendleProxy.sol";
 import "./Interfaces/IDepositToken.sol";
 import "./Interfaces/IPendleDepositor.sol";
 import "./Interfaces/IEqbMinter.sol";
 import "./Interfaces/IBaseRewardPool.sol";
+import "./Dependencies/TransferHelper.sol";
 
 abstract contract PendleBoosterBaseUpg is IPendleBooster, OwnableUpgradeable {
     using SafeERC20 for IERC20;

@@ -7,7 +7,7 @@ import "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol"
 import "./Interfaces/Pendle/IPMarket.sol";
 import "./Interfaces/Pendle/IPMarketFactory.sol";
 import "./Interfaces/IPendleProxy.sol";
-import "@shared/lib-contracts-v0.8/contracts/Dependencies/TransferHelper.sol";
+import "./Dependencies/TransferHelper.sol";
 
 abstract contract PendleProxyBaseUpg is IPendleProxy, AccessControlUpgradeable {
     using SafeERC20 for IERC20;

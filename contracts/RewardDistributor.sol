@@ -4,7 +4,7 @@ pragma solidity 0.8.17;
 import "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol";
 import "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol";
 
-import "@shared/lib-contracts-v0.8/contracts/Dependencies/TransferHelper.sol";
+import "./Dependencies/TransferHelper.sol";
 import "./Dependencies/Errors.sol";
 
 contract RewardDistributor is AccessControlUpgradeable {
